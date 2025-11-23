@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Transaction Categorisation System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 AI Transaction Categorisation System</h1>
+            <p class="subtitle">Automated, accurate, and explainable transaction classification</p>
+        </header>
+
+        <nav class="tabs">
+            <button class="tab-button active" onclick="showTab('categorize')">Categorize</button>
+            <button class="tab-button" onclick="showTab('batch')">Batch Process</button>
+            <button class="tab-button" onclick="showTab('explain')">Explainability</button>
+            <button class="tab-button" onclick="showTab('feedback')">Feedback</button>
+            <button class="tab-button" onclick="showTab('metrics')">Metrics</button>
+            <button class="tab-button" onclick="showTab('categories')">Categories</button>
+        </nav>
+
+        <!-- Categorize Tab -->
+        <div id="categorize-tab" class="tab-content active">
+            <div class="card">
+                <h2>Categorize Transaction</h2>
+                <div class="form-group">
+                    <label for="transaction-input">Transaction String:</label>
+                    <input type="text" id="transaction-input" placeholder="e.g., Starbucks Coffee, Amazon.com, Shell Gas Station">
+                </div>
+                <div class="form-group">
+                    <label for="amount-input">Amount (optional):</label>
+                    <input type="number" id="amount-input" placeholder="0.00" step="0.01">
+                </div>
+                <button onclick="categorizeTransaction()" class="btn btn-primary">Categorize</button>
+                
+                <div id="categorize-result" class="result-container"></div>
+            </div>
+        </div>
+
+        <!-- Batch Process Tab -->
+        <div id="batch-tab" class="tab-content">
+            <div class="card">
+                <h2>Batch Categorization</h2>
+                <div class="form-group">
+                    <label for="batch-input">Transaction Strings (one per line):</label>
+                    <textarea id="batch-input" rows="10" placeholder="Starbucks Coffee&#10;Amazon.com&#10;Shell Gas Station"></textarea>
+                </div>
+                <button onclick="categorizeBatch()" class="btn btn-primary">Process Batch</button>
+                
+                <div id="batch-result" class="result-container"></div>
+            </div>
+        </div>
+
+        <!-- Explainability Tab -->
+        <div id="explain-tab" class="tab-content">
+            <div class="card">
+                <h2>Explainability Insights</h2>
+                <div class="form-group">
+                    <label for="explain-transaction-id">Transaction ID:</label>
+                    <input type="number" id="explain-transaction-id" placeholder="Enter transaction ID">
+                </div>
+                <button onclick="getExplanation()" class="btn btn-primary">Get Explanation</button>
+                
+                <div id="explain-result" class="result-container"></div>
+            </div>
+        </div>
+
+        <!-- Feedback Tab -->
+        <div id="feedback-tab" class="tab-content">
+            <div class="card">
+                <h2>Submit Feedback</h2>
+                <div class="form-group">
+                    <label for="feedback-transaction-id">Transaction ID:</label>
+                    <input type="number" id="feedback-transaction-id" placeholder="Enter transaction ID">
+                </div>
+                <div class="form-group">
+                    <label for="feedback-category">Corrected Category:</label>
+                    <select id="feedback-category"></select>
+                </div>
+                <div class="form-group">
+                    <label for="feedback-reason">Reason (optional):</label>
+                    <textarea id="feedback-reason" rows="3" placeholder="Why is this correction needed?"></textarea>
+                </div>
+                <button onclick="submitFeedback()" class="btn btn-primary">Submit Feedback</button>
+                
+                <div id="feedback-result" class="result-container"></div>
+            </div>
+        </div>
+
+        <!-- Metrics Tab -->
+        <div id="metrics-tab" class="tab-content">
+            <div class="card">
+                <h2>Evaluation Metrics</h2>
+                <button onclick="loadMetrics()" class="btn btn-primary">Load Metrics</button>
+                
+                <div id="metrics-result" class="result-container"></div>
+            </div>
+        </div>
+
+        <!-- Categories Tab -->
+        <div id="categories-tab" class="tab-content">
+            <div class="card">
+                <h2>Category Management</h2>
+                <button onclick="loadCategories()" class="btn btn-primary">Load Categories</button>
+                <button onclick="showCategoryEditor()" class="btn btn-secondary">Edit Categories</button>
+                
+                <div id="categories-result" class="result-container"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="explainability.js"></script>
+</body>
+</html>
+

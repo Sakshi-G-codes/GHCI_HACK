@@ -1,0 +1,77 @@
+{
+  "categories": [
+    {
+      "id": "dining",
+      "name": "Dining & Restaurants",
+      "description": "Restaurants, cafes, food delivery, and dining establishments",
+      "keywords": ["restaurant", "cafe", "food", "dining", "starbucks", "mcdonald", "pizza", "burger", "coffee", "bakery", "bar", "pub"]
+    },
+    {
+      "id": "shopping",
+      "name": "Shopping & Retail",
+      "description": "Online and offline retail purchases",
+      "keywords": ["amazon", "store", "shop", "retail", "walmart", "target", "mall", "marketplace", "purchase"]
+    },
+    {
+      "id": "fuel",
+      "name": "Fuel & Gas",
+      "description": "Gas stations and fuel purchases",
+      "keywords": ["shell", "gas", "fuel", "petrol", "exxon", "chevron", "bp", "station", "pump"]
+    },
+    {
+      "id": "groceries",
+      "name": "Groceries",
+      "description": "Grocery stores and supermarkets",
+      "keywords": ["safeway", "kroger", "whole foods", "grocery", "supermarket", "aldi", "costco", "trader joe"]
+    },
+    {
+      "id": "transport",
+      "name": "Transportation",
+      "description": "Public transport, rideshare, and transportation services",
+      "keywords": ["uber", "lyft", "taxi", "metro", "subway", "bus", "train", "airline", "flight"]
+    },
+    {
+      "id": "utilities",
+      "name": "Utilities",
+      "description": "Electricity, water, gas, internet, and phone bills",
+      "keywords": ["electric", "water", "internet", "phone", "utility", "bill", "at&t", "verizon", "comcast"]
+    },
+    {
+      "id": "entertainment",
+      "name": "Entertainment",
+      "description": "Movies, streaming, games, and entertainment",
+      "keywords": ["netflix", "spotify", "cinema", "movie", "theater", "game", "streaming", "entertainment"]
+    },
+    {
+      "id": "healthcare",
+      "name": "Healthcare",
+      "description": "Medical services, pharmacies, and healthcare",
+      "keywords": ["pharmacy", "hospital", "clinic", "medical", "doctor", "cvs", "walgreens", "health"]
+    },
+    {
+      "id": "education",
+      "name": "Education",
+      "description": "Educational services, courses, and materials",
+      "keywords": ["school", "university", "college", "course", "education", "tuition", "bookstore"]
+    },
+    {
+      "id": "insurance",
+      "name": "Insurance",
+      "description": "Insurance premiums and payments",
+      "keywords": ["insurance", "premium", "coverage", "policy"]
+    },
+    {
+      "id": "banking",
+      "name": "Banking & Finance",
+      "description": "Bank fees, ATM withdrawals, and financial services",
+      "keywords": ["bank", "atm", "withdrawal", "fee", "transfer", "chase", "bank of america"]
+    },
+    {
+      "id": "other",
+      "name": "Other",
+      "description": "Uncategorized transactions",
+      "keywords": []
+    }
+  ]
+}
+
